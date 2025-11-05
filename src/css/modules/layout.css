@@ -164,18 +164,28 @@
   @apply border-gray-800;
 }
 
-/* Desktop Sidebar */
-aside[class*="docSidebarContainer"] {
+/* Desktop Sidebar - Enhanced with better spacing */
+aside[class*="docSidebarContainer"],
+aside[class*="blogSidebarContainer"] {
   @apply border-r border-gray-200;
+  /* Add left padding for better spacing from edge */
+  padding-left: 2rem;
 }
 
-[data-theme='dark'] aside[class*="docSidebarContainer"] {
+[data-theme='dark'] aside[class*="docSidebarContainer"],
+[data-theme='dark'] aside[class*="blogSidebarContainer"] {
   @apply border-gray-800;
+}
+
+/* Blog-specific sidebar adjustments */
+.col--3 aside,
+aside.col.col--3 {
+  @apply pl-8 pr-4;
 }
 
 /* Sidebar Navigation */
 nav[class*="sidebar"] {
-  @apply py-4;
+  @apply py-6 px-2;
 }
 
 /* Menu Container */
