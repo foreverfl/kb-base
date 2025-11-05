@@ -1,0 +1,61 @@
+/**
+ * UI Components
+ * =============
+ * Buttons, Cards, Tables, and other reusable components
+ */
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+.button {
+  @apply font-semibold rounded-full px-6 py-2.5 transition-all duration-200;
+}
+
+.button--primary {
+  @apply bg-green-600 text-white shadow-lg hover:bg-green-700 hover:shadow-xl;
+}
+
+.button--secondary {
+  @apply bg-gray-100 text-gray-700 hover:bg-gray-200;
+}
+
+[data-theme='dark'] .button--secondary {
+  @apply bg-gray-800 text-gray-300 hover:bg-gray-700;
+}
+
+/* ==========================================================================
+   CARDS
+   ========================================================================== */
+
+.card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-lg;
+}
+
+[data-theme='dark'] .card {
+  @apply bg-gray-800 border-gray-700;
+}
+
+/* ==========================================================================
+   TABLES
+   ========================================================================== */
+
+table {
+  @apply w-full border-collapse;
+}
+
+th {
+  @apply bg-gray-50 font-semibold text-left p-3 border-b-2 border-gray-200;
+}
+
+[data-theme='dark'] th {
+  @apply bg-gray-800 border-gray-700;
+}
+
+td {
+  @apply p-3 border-b border-gray-100;
+}
+
+[data-theme='dark'] td {
+  @apply border-gray-800;
+}

@@ -1,0 +1,111 @@
+/**
+ * Layout Components
+ * =================
+ * Navbar, Footer, Sidebar, and other layout elements
+ */
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+
+.navbar {
+  @apply shadow-sm backdrop-blur-lg bg-white/95;
+}
+
+[data-theme='dark'] .navbar {
+  @apply bg-slate-900/95 border-b border-white/10;
+}
+
+.navbar__link {
+  @apply font-medium rounded-lg px-3 py-2 transition-all duration-150 ease-in-out;
+}
+
+.navbar__link:hover {
+  @apply bg-gray-100;
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  @apply bg-gray-800;
+}
+
+.navbar__link--active {
+  @apply text-green-600;
+}
+
+[data-theme='dark'] .navbar__link--active {
+  @apply text-green-400;
+}
+
+.navbar__logo img {
+  height: 2rem; /* 32px */
+  width: auto;
+}
+
+/* Navbar responsive */
+@media (max-width: 996px) {
+  .navbar__toggle {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar__logo img {
+    height: 1.75rem; /* 28px */
+  }
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer {
+  @apply border-t border-gray-200;
+}
+
+[data-theme='dark'] .footer {
+  @apply border-gray-800;
+}
+
+.footer .container {
+  @apply mx-auto max-w-6xl px-8;
+}
+
+.footer__links {
+  @apply mx-auto;
+}
+
+.footer__link-item {
+  @apply inline-flex items-center gap-1;
+}
+
+.footer__copyright {
+  @apply text-center;
+}
+
+/* ==========================================================================
+   SIDEBAR
+   ========================================================================== */
+
+.menu__link {
+  @apply rounded-lg transition-all duration-150 ease-in-out hover:bg-gray-100;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  @apply bg-gray-800;
+}
+
+.menu__link--active {
+  @apply bg-green-50 text-green-600 font-semibold;
+}
+
+[data-theme='dark'] .menu__link--active {
+  @apply bg-green-600/10 text-green-400;
+}
+
+/* ==========================================================================
+   ARTICLE
+   ========================================================================== */
+
+article {
+  @apply max-w-none;
+}

@@ -5,7 +5,7 @@ const {themes} = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'KB Base',
+  title: 'Knowledge Base',
   tagline: 'Knowledge Base Documentation',
   favicon: 'img/favicon.ico',
 
@@ -74,9 +74,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'KB Base',
+        title: 'Knowledge Base',
         logo: {
-          alt: 'KB Base Logo',
+          alt: 'Knowledge Base Logo',
           src: 'img/docusaurus-logo.svg',
         },
         items: [
@@ -137,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} KB Base. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Knowledge Base. Built with Docusaurus.`,
       },
       prism: {
         theme: themes.github,

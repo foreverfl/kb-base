@@ -1,0 +1,44 @@
+/**
+ * Code & Syntax Highlighting
+ * ==========================
+ * Code blocks, inline code, and syntax highlighting styles
+ */
+
+/* ==========================================================================
+   INLINE CODE
+   ========================================================================== */
+
+.markdown code {
+  @apply text-green-600 bg-gray-100 px-1 py-0.5 rounded text-sm;
+}
+
+[data-theme='dark'] .markdown code {
+  @apply text-green-400 bg-gray-800;
+}
+
+/* ==========================================================================
+   CODE BLOCKS
+   ========================================================================== */
+
+/* Base code block styles */
+pre {
+  @apply rounded-xl border border-gray-200;
+}
+
+[data-theme='dark'] pre {
+  @apply border-gray-700;
+}
+
+/* Markdown code blocks */
+.markdown pre {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6;
+}
+
+[data-theme='dark'] .markdown pre {
+  @apply bg-gray-800;
+}
+
+/* Code inside pre blocks */
+.markdown pre code {
+  @apply text-gray-100 bg-transparent p-0;
+}
