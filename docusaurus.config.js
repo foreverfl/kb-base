@@ -37,6 +37,11 @@ const config = {
     locales: ['ko'],
   },
 
+  // Add client modules for global styles
+  clientModules: [
+    require.resolve('./src/css/custom.css'),
+  ],
+
   presets: [
     [
       '@docusaurus/preset-classic',

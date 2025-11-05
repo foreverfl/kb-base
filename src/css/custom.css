@@ -2,6 +2,9 @@
  * Tailwind CSS v4 import
  */
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /**
  * Docusaurus theme variables
@@ -206,4 +209,160 @@ td {
 .skip-to-content {
   @apply absolute -left-[9999px] bg-green-600 text-white px-4 py-2 rounded-lg z-50;
   @apply focus:absolute focus:left-4 focus:top-4;
+}
+
+/* Navbar logo sizing */
+.navbar__logo img {
+  height: 2rem; /* 32px - adjust size as needed */
+  width: auto;
+}
+
+/* Optional: Adjust logo size on mobile */
+@media (max-width: 640px) {
+  .navbar__logo img {
+    height: 1.75rem; /* 28px - smaller on mobile */
+  }
+}
+
+/* Apply styles to markdown content */
+.markdown {
+  @apply max-w-none text-gray-700;
+}
+
+/* Markdown heading styles */
+.markdown h1 {
+  @apply text-4xl font-bold text-gray-900 mt-0 mb-8;
+}
+
+.markdown h2 {
+  @apply text-3xl font-bold text-gray-900 mt-12 mb-6;
+}
+
+.markdown h3 {
+  @apply text-2xl font-bold text-gray-900 mt-8 mb-4;
+}
+
+.markdown h4 {
+  @apply text-xl font-semibold text-gray-900 mt-6 mb-3;
+}
+
+.markdown h5 {
+  @apply text-lg font-semibold text-gray-900 mt-4 mb-2;
+}
+
+/* Markdown paragraph styles */
+.markdown p {
+  @apply text-gray-700 leading-relaxed mb-6;
+}
+
+/* Markdown link styles */
+.markdown a {
+  @apply text-green-600 no-underline hover:underline;
+}
+
+/* Markdown strong and emphasis */
+.markdown strong {
+  @apply text-gray-900 font-semibold;
+}
+
+.markdown em {
+  @apply italic;
+}
+
+/* Markdown code styles */
+.markdown code {
+  @apply text-green-600 bg-gray-100 px-1 py-0.5 rounded text-sm;
+}
+
+.markdown pre {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6;
+}
+
+.markdown pre code {
+  @apply text-gray-100 bg-transparent p-0;
+}
+
+/* Markdown list styles */
+.markdown ul {
+  @apply my-6 ml-6 list-disc;
+}
+
+.markdown ol {
+  @apply my-6 ml-6 list-decimal;
+}
+
+.markdown li {
+  @apply my-2 leading-relaxed;
+}
+
+/* Markdown blockquote styles */
+.markdown blockquote {
+  @apply border-l-4 border-green-500 pl-4 italic my-6 text-gray-600;
+}
+
+/* Markdown table styles */
+.markdown table {
+  @apply w-full border-collapse my-6;
+}
+
+.markdown th {
+  @apply bg-gray-50 font-semibold text-left p-3 border-b-2 border-gray-200;
+}
+
+.markdown td {
+  @apply p-3 border-b border-gray-100;
+}
+
+/* Markdown horizontal rule */
+.markdown hr {
+  @apply my-8 border-t border-gray-300;
+}
+
+/* Dark mode styles for markdown */
+[data-theme='dark'] .markdown {
+  @apply text-gray-300;
+}
+
+[data-theme='dark'] .markdown h1,
+[data-theme='dark'] .markdown h2,
+[data-theme='dark'] .markdown h3,
+[data-theme='dark'] .markdown h4,
+[data-theme='dark'] .markdown h5 {
+  @apply text-gray-100;
+}
+
+[data-theme='dark'] .markdown p {
+  @apply text-gray-300;
+}
+
+[data-theme='dark'] .markdown a {
+  @apply text-green-400;
+}
+
+[data-theme='dark'] .markdown strong {
+  @apply text-gray-100;
+}
+
+[data-theme='dark'] .markdown code {
+  @apply text-green-400 bg-gray-800;
+}
+
+[data-theme='dark'] .markdown pre {
+  @apply bg-gray-800;
+}
+
+[data-theme='dark'] .markdown blockquote {
+  @apply border-green-400 text-gray-400;
+}
+
+[data-theme='dark'] .markdown th {
+  @apply bg-gray-800 border-gray-700;
+}
+
+[data-theme='dark'] .markdown td {
+  @apply border-gray-800;
+}
+
+[data-theme='dark'] .markdown hr {
+  @apply border-gray-700;
 }
