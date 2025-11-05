@@ -61,6 +61,60 @@ td {
 }
 
 /* ==========================================================================
+   SEARCH BOX
+   ========================================================================== */
+
+/* Search input with Tailwind utilities */
+.navbar__search-input {
+  @apply appearance-none inline-block;
+  @apply w-[12.5rem] h-8;
+  @apply rounded-full border-0;
+  @apply pl-9 pr-2 py-0;
+  @apply text-base cursor-text;
+  @apply bg-gray-100 text-gray-700;
+  @apply transition-all duration-200;
+
+  /* Search icon background */
+  background-image: var(--ifm-navbar-search-input-icon);
+  background-repeat: no-repeat;
+  background-position: 0.75rem center;
+  background-size: 1rem 1rem;
+}
+
+/* Focus state */
+.navbar__search-input:focus {
+  @apply outline-none ring-2 ring-green-500/50;
+  @apply w-[15rem] bg-white;
+}
+
+/* Hover state */
+.navbar__search-input:hover {
+  @apply bg-gray-50;
+}
+
+/* Dark mode styles */
+[data-theme='dark'] .navbar__search-input {
+  @apply bg-gray-800 text-gray-300;
+}
+
+[data-theme='dark'] .navbar__search-input:focus {
+  @apply bg-gray-900 ring-green-400;
+}
+
+[data-theme='dark'] .navbar__search-input:hover {
+  @apply bg-gray-700;
+}
+
+/* Placeholder text */
+.navbar__search-input::placeholder {
+  @apply text-gray-500;
+}
+
+[data-theme='dark'] .navbar__search-input::placeholder {
+  @apply text-gray-400;
+}
+
+/* ==========================================================================
    HOMEPAGE FEATURES SECTION
    ========================================================================== */
 

@@ -82,7 +82,8 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultLimits: 8,
-        searchResultContextMaxLength: 50
+        searchResultContextMaxLength: 50,
+        searchBarShortcutHint: false,
       })
     ]
   ],
