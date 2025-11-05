@@ -2,21 +2,21 @@
 sidebar_position: 1
 ---
 
-# 페이지 생성하기
+# Create a Page
 
-Docusaurus에서 새로운 **페이지**를 생성하는 방법을 알아봅니다.
+Learn how to create new **pages** in Docusaurus.
 
-## 새 페이지 추가하기
+## Add a New Page
 
-`src/pages` 디렉토리에 React 컴포넌트를 추가하여 새로운 페이지를 생성할 수 있습니다.
+You can create a new page by adding React components to the `src/pages` directory.
 
 - `src/pages/index.js` → `localhost:3000/`
 - `src/pages/foo.md` → `localhost:3000/foo`
 - `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
 
-## 첫 번째 React 페이지 만들기
+## Create Your First React Page
 
-`src/pages/my-react-page.js` 파일을 생성합니다:
+Create a file at `src/pages/my-react-page.js`:
 
 ```jsx
 import React from 'react';
@@ -32,11 +32,11 @@ export default function MyReactPage() {
 }
 ```
 
-이제 `http://localhost:3000/my-react-page`에서 새 페이지를 확인할 수 있습니다.
+Now you can access the new page at `http://localhost:3000/my-react-page`.
 
-## 첫 번째 Markdown 페이지 만들기
+## Create Your First Markdown Page
 
-`src/pages/my-markdown-page.md` 파일을 생성합니다:
+Create a file at `src/pages/my-markdown-page.md`:
 
 ```markdown
 # My Markdown page
@@ -44,4 +44,4 @@ export default function MyReactPage() {
 This is a Markdown page
 ```
 
-이제 `http://localhost:3000/my-markdown-page`에서 새 페이지를 확인할 수 있습니다.
+Now you can access the new page at `http://localhost:3000/my-markdown-page`.

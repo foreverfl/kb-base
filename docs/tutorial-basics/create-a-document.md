@@ -2,17 +2,17 @@
 sidebar_position: 2
 ---
 
-# 문서 생성하기
+# Create a Document
 
-문서는 다음을 통해 **페이지 그룹**을 만들 수 있습니다:
+Documents can create **groups of pages** through:
 
-- **사이드바**
-- **이전/다음 네비게이션**
-- **버전 관리**
+- **Sidebar**
+- **Previous/next navigation**
+- **Versioning**
 
-## 첫 번째 문서 만들기
+## Create Your First Doc
 
-`docs/hello.md` 파일을 생성합니다:
+Create a file at `docs/hello.md`:
 
 ```md
 # Hello
@@ -20,13 +20,13 @@ sidebar_position: 2
 This is my **first Docusaurus document**!
 ```
 
-새 문서는 `http://localhost:3000/docs/hello`에서 확인할 수 있습니다.
+A new document is now available at `http://localhost:3000/docs/hello`.
 
-## 사이드바 구성하기
+## Configure the Sidebar
 
-Docusaurus는 `docs` 폴더에서 자동으로 **사이드바를 생성**합니다.
+Docusaurus automatically **creates a sidebar** from the `docs` folder.
 
-메타데이터를 추가하여 사이드바 순서와 레이블을 사용자 정의할 수 있습니다:
+You can customize the sidebar order and labels by adding metadata:
 
 ```md
 ---
@@ -39,7 +39,7 @@ sidebar_position: 3
 This is my **first Docusaurus document**!
 ```
 
-`sidebars.js`에서 명시적으로 사이드바를 생성할 수도 있습니다:
+You can also create an explicit sidebar in `sidebars.js`:
 
 ```js
 module.exports = {
