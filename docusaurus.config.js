@@ -5,20 +5,20 @@ const {themes} = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Welcome to my documentation site',
+  title: 'KB Base',
+  tagline: 'Knowledge Base Documentation',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://foreverfl.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/kb-base/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-org', // Usually your GitHub org/user name.
-  projectName: 'my-site', // Usually your repo name.
+  organizationName: 'foreverfl', // Usually your GitHub org/user name.
+  projectName: 'kb-base', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -47,14 +47,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-org/my-site/tree/main/',
+            'https://github.com/foreverfl/kb-base/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-org/my-site/tree/main/',
+            'https://github.com/foreverfl/kb-base/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -69,9 +69,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'KB Base',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'KB Base Logo',
           src: 'img/docusaurus-logo.svg',
         },
         items: [
@@ -83,7 +83,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/your-org/my-site',
+            href: 'https://github.com/foreverfl/kb-base',
             label: 'GitHub',
             position: 'right',
           },
@@ -127,12 +127,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-org/my-site',
+                href: 'https://github.com/foreverfl/kb-base',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Site. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} KB Base. Built with Docusaurus.`,
       },
       prism: {
         theme: themes.github,
