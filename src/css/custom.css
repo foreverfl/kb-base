@@ -10,10 +10,11 @@
  * 2. Variables - CSS custom properties and theme tokens
  * 3. Base - Global resets and base element styles
  * 4. Layout - Navbar, footer, sidebar structure
- * 5. Components - Reusable UI components
- * 6. Typography - Text and markdown styles
- * 7. Code - Syntax highlighting and code blocks
- * 8. Utilities - Helper and accessibility classes
+ * 5. TOC - Table of Contents styling
+ * 6. Components - Reusable UI components
+ * 7. Typography - Text and markdown styles
+ * 8. Code - Syntax highlighting and code blocks
+ * 9. Utilities - Helper and accessibility classes
  *
  * Maintenance Guidelines:
  * - Keep each module focused on its specific concern
@@ -33,6 +34,7 @@
 @import "./modules/variables.css";
 @import "./modules/base.css";
 @import "./modules/layout.css";
+@import "./modules/toc.css";
 @import "./modules/components.css";
 @import "./modules/typography.css";
 @import "./modules/code.css";
