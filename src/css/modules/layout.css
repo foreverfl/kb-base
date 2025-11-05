@@ -168,8 +168,6 @@
 aside[class*="docSidebarContainer"],
 aside[class*="blogSidebarContainer"] {
   @apply border-r border-gray-200;
-  /* Add left padding for better spacing from edge */
-  padding-left: 2rem;
 }
 
 [data-theme='dark'] aside[class*="docSidebarContainer"],
@@ -331,6 +329,16 @@ nav[class*="sidebar"] {
 
 [data-theme='dark'] .menu__link-badge {
   @apply bg-green-900/50 text-green-300;
+}
+
+/* Sidebar Collapse Button - Center alignment */
+.theme-doc-sidebar-container button[title="Collapse sidebar"] {
+  text-align: center;
+}
+
+/* Fix SVG display in collapse button - Override Tailwind's block default */
+.theme-doc-sidebar-container button[title="Collapse sidebar"] svg {
+  display: inline;
 }
 
 /* ==========================================================================

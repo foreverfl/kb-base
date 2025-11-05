@@ -151,6 +151,12 @@ const config = {
         theme: themes.github,
         darkTheme: themes.dracula,
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
+        },
+      },
     }),
 };
 
