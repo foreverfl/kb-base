@@ -91,6 +91,10 @@ const config = {
             type: 'custom-githubIcon',
             position: 'right',
           },
+          {
+            type: 'custom-darkmode',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -137,6 +141,11 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Knowledge Base. Built with Docusaurus.`,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,  // Disable the default dark mode toggle
+        respectPrefersColorScheme: false,
       },
       prism: {
         theme: themes.github,

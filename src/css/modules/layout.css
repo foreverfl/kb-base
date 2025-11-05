@@ -93,6 +93,19 @@
   background-color: var(--ifm-navbar-link-hover-color);
 }
 
+/* Dark mode toggle in navbar */
+.header-darkmode-toggle {
+  @apply flex items-center justify-center w-8 h-8 rounded-lg hover:bg-gray-100 transition-colors;
+}
+
+[data-theme='dark'] .header-darkmode-toggle {
+  @apply hover:bg-gray-800;
+}
+
+.header-darkmode-toggle:hover {
+  @apply no-underline;
+}
+
 /* Navbar responsive */
 @media (max-width: 996px) {
   .navbar__toggle {
