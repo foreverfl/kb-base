@@ -4,8 +4,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+function HomepageHeader(): React.ReactElement {
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className="relative overflow-hidden bg-white dark:bg-gray-900 py-24 md:py-32">
       <div className="container relative mx-auto px-4">
@@ -39,8 +39,8 @@ function HomepageHeader() {
   );
 }
 
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+export default function Home(): React.ReactElement {
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}

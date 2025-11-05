@@ -1,6 +1,12 @@
 import React from 'react';
 
-const FeatureList = [
+interface Feature {
+  title: string;
+  icon: React.ReactNode;
+  description: React.ReactNode;
+}
+
+const FeatureList: Feature[] = [
   {
     title: 'Easy to Use',
     icon: (
@@ -45,7 +51,13 @@ const FeatureList = [
   },
 ];
 
-function Feature({icon, title, description}) {
+interface FeatureProps {
+  icon: React.ReactNode;
+  title: string;
+  description: React.ReactNode;
+}
+
+function Feature({ icon, title, description }: FeatureProps): React.ReactElement {
   return (
     <div className="group relative">
       <div className="relative h-full bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
@@ -65,7 +77,7 @@ function Feature({icon, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function HomepageFeatures(): React.ReactElement {
   return (
     <section className="relative py-20 bg-gray-50/50 dark:bg-gray-900/50">
       <div className="container mx-auto px-4">

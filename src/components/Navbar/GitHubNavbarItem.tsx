@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 
-export default function GitHubNavbarItem() {
+export default function GitHubNavbarItem(): React.ReactElement {
   return (
     <Link
       href="https://github.com/foreverfl/kb-base"
