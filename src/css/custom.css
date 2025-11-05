@@ -11,10 +11,11 @@
  * 3. Base - Global resets and base element styles
  * 4. Layout - Navbar, footer, sidebar structure
  * 5. TOC - Table of Contents styling
- * 6. Components - Reusable UI components
- * 7. Typography - Text and markdown styles
- * 8. Code - Syntax highlighting and code blocks
- * 9. Utilities - Helper and accessibility classes
+ * 6. Docs - Documentation and blog page layouts
+ * 7. Components - Reusable UI components
+ * 8. Typography - Text and markdown styles
+ * 9. Code - Syntax highlighting and code blocks
+ * 10. Utilities - Helper and accessibility classes
  *
  * Maintenance Guidelines:
  * - Keep each module focused on its specific concern
@@ -35,6 +36,7 @@
 @import "./modules/base.css";
 @import "./modules/layout.css";
 @import "./modules/toc.css";
+@import "./modules/docs.css";
 @import "./modules/components.css";
 @import "./modules/typography.css";
 @import "./modules/code.css";
