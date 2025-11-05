@@ -88,8 +88,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/foreverfl/kb-base',
-            label: 'GitHub',
+            type: 'custom-githubIcon',
             position: 'right',
           },
         ],
