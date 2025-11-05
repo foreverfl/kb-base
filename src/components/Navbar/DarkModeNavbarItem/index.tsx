@@ -27,8 +27,8 @@ export default function DarkModeNavbarItem(): React.ReactElement {
       {isDarkMode ? (
         // Sun icon for light mode
         <svg
-          width="20"
-          height="20"
+          width="28"
+          height="28"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -49,8 +49,8 @@ export default function DarkModeNavbarItem(): React.ReactElement {
       ) : (
         // Moon icon for dark mode
         <svg
-          width="20"
-          height="20"
+          width="28"
+          height="28"
           viewBox="0 0 24 24"
           fill="currentColor"
         >
