@@ -68,6 +68,25 @@ const config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        language: ["en", "ko", "ja"],
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: false,
+        docsRouteBasePath: "/docs",
+        blogRouteBasePath: "/blog",
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 50
+      })
+    ]
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -93,6 +112,10 @@ const config = {
           },
           {
             type: 'custom-darkmode',
+            position: 'right',
+          },
+          {
+            type: 'search',
             position: 'right',
           },
         ],
