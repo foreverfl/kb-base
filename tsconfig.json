@@ -13,7 +13,14 @@
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
-    "types": ["@docusaurus/types", "@types/react", "@types/react-dom"]
+    "types": ["@docusaurus/types", "@types/react", "@types/react-dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@site/*": ["./*"],
+      "@generated/*": [".docusaurus/*"],
+      "@docusaurus/*": ["node_modules/@docusaurus/*"],
+      "@theme/*": ["node_modules/@docusaurus/theme-classic/lib/*"]
+    }
   },
   "include": [
     "docusaurus.config.js",
