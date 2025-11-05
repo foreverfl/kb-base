@@ -8,8 +8,9 @@
    PAGE CONTAINER
    ========================================================================== */
 
-/* Main article container - add padding */
-.main-wrapper {
+/* Main article container - add padding (only for docs/blog pages) */
+.docs-wrapper .main-wrapper,
+article .main-wrapper {
   @apply px-4 md:px-8 lg:px-12;
 }
 
@@ -228,7 +229,8 @@ article .container {
 
 @media (max-width: 996px) {
   /* Mobile padding adjustments */
-  .main-wrapper,
+  .docs-wrapper .main-wrapper,
+  article .main-wrapper,
   .blogMainContainer,
   article[class*="blogPostPage"] {
     @apply px-4;
@@ -246,7 +248,8 @@ article .container {
 
 @media (max-width: 640px) {
   /* Smaller padding on very small screens */
-  .main-wrapper,
+  .docs-wrapper .main-wrapper,
+  article .main-wrapper,
   .blogMainContainer,
   article[class*="blogPostPage"] {
     @apply px-3;

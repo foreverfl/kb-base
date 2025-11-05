@@ -59,3 +59,53 @@ td {
 [data-theme='dark'] td {
   @apply border-gray-800;
 }
+
+/* ==========================================================================
+   HOMEPAGE FEATURES SECTION
+   ========================================================================== */
+
+/* Override Tailwind's dark mode specificity with higher specificity */
+.homepage-features-section {
+  background-color: white;
+  color: black;
+}
+
+.homepage-features-section h2,
+.homepage-features-section h3 {
+  color: black;
+}
+
+.homepage-features-section p {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+[data-theme='dark'] .homepage-features-section {
+  background-color: rgba(17, 24, 39, 0.5);
+  color: white;
+}
+
+[data-theme='dark'] .homepage-features-section h2,
+[data-theme='dark'] .homepage-features-section h3 {
+  color: white;
+}
+
+[data-theme='dark'] .homepage-features-section p {
+  color: rgb(156, 163, 175);
+}
+
+/* Feature cards inside homepage section */
+.homepage-features-section .bg-white h3 {
+  color: white;
+}
+
+.homepage-features-section .bg-white p {
+  color: white;
+}
+
+[data-theme='dark'] .homepage-features-section .dark\:bg-gray-800 h3 {
+  color: white;
+}
+
+[data-theme='dark'] .homepage-features-section .dark\:bg-gray-800 p {
+  color: rgb(156, 163, 175);
+}

@@ -79,7 +79,7 @@ function Feature({ icon, title, description }: FeatureProps): React.ReactElement
 
 export default function HomepageFeatures(): React.ReactElement {
   return (
-    <section className="relative py-20 bg-gray-50/50 dark:bg-gray-900/50">
+    <section className="homepage-features-section relative py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -99,8 +99,8 @@ export default function HomepageFeatures(): React.ReactElement {
       </div>
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-green-100 dark:bg-green-900/20 rounded-full blur-3xl opacity-30"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl opacity-30"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-green-50 dark:bg-green-900/20 rounded-full blur-3xl opacity-20"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-50 dark:bg-blue-900/20 rounded-full blur-3xl opacity-20"></div>
       </div>
     </section>
   );
