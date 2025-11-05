@@ -1,7 +1,9 @@
 /**
- * Tailwind CSS v4
+ * Tailwind CSS imports
  */
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /**
  * Docusaurus theme variables
