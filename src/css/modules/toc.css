@@ -237,18 +237,6 @@ div[class*="tocCollapsible"]::-webkit-scrollbar-thumb:hover {
    TOC ANIMATION
    ========================================================================== */
 
-/* Smooth scroll behavior */
-@media (prefers-reduced-motion: no-preference) {
-  .table-of-contents__link {
-    @apply transition-all duration-200 ease-in-out;
-  }
-
-  /* Active link slide-in animation */
-  .table-of-contents__link--active {
-    animation: slide-in 0.2s ease-out;
-  }
-}
-
 @keyframes slide-in {
   from {
     opacity: 0;
