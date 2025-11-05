@@ -1,0 +1,115 @@
+# Docusaurus + Tailwind CSS Starter Template (pnpm)
+
+A clean starter template for building documentation sites with Docusaurus and Tailwind CSS. This template is optimized for pnpm package manager.
+
+## Features
+
+- **Docusaurus 3.x** - Fast and feature-rich static site generator
+- **Tailwind CSS 4.x** - Utility-first CSS framework for rapid UI development
+- **React 19** - Latest version of React for modern web development
+- **Dark mode support** - Built-in theme switching
+- **Responsive design** - Mobile-friendly out of the box
+- **SEO optimized** - Meta tags and structured data ready
+
+## Quick Start
+
+### Prerequisites
+
+- Node.js 18.0 or higher
+- pnpm package manager (recommended) or npm
+
+### Installation
+
+1. Clone this repository:
+```bash
+git clone <repository-url> my-site
+cd my-site
+```
+
+2. Install dependencies:
+```bash
+pnpm install
+# or using npm
+npm install
+```
+
+3. Start the development server:
+```bash
+pnpm run start
+# or using npm
+npm run start
+```
+
+Your site will be available at `http://localhost:3000`
+
+## Project Structure
+
+```
+my-site/
+├── blog/
+│   └── 2024-11-03-welcome.md   # Blog posts
+├── docs/
+│   └── intro.md                 # Documentation pages
+├── src/
+│   ├── components/              # React components
+│   ├── css/                     # Global styles
+│   └── pages/                   # Custom pages
+├── static/                      # Static assets
+├── docusaurus.config.js         # Docusaurus configuration
+├── postcss.config.js           # PostCSS configuration
+├── sidebars.js                 # Sidebar configuration
+└── package.json
+```
+
+## Available Scripts
+
+- `pnpm run start` - Start development server
+- `pnpm run build` - Build for production
+- `pnpm run serve` - Test production build locally
+- `pnpm run clear` - Clear cache
+- `pnpm run deploy` - Deploy to GitHub Pages (requires configuration)
+
+Note: You can also use `npm run` instead of `pnpm run` for these commands.
+
+## Customization
+
+### Site Configuration
+
+Edit `docusaurus.config.js` to customize:
+- Site metadata (title, tagline, URL)
+- Navigation menu
+- Footer links
+- Theme settings
+
+### Styling with Tailwind
+
+- Use Tailwind utilities in React components
+- Customize theme in `tailwind.config.js` (create if needed)
+- Global styles in `src/css/custom.css`
+
+### Adding Content
+
+- **Documentation**: Add `.md` or `.mdx` files to the `docs/` directory
+- **Blog posts**: Add dated markdown files to `blog/` directory
+- **Custom pages**: Create React components in `src/pages/`
+
+## Deployment
+
+This template is ready for deployment to various platforms:
+
+- GitHub Pages
+- Vercel
+- Netlify
+- AWS Amplify
+
+Refer to the [Docusaurus deployment documentation](https://docusaurus.io/docs/deployment) for specific instructions.
+
+## License
+
+This project is licensed under the ISC License.
+
+## Resources
+
+- [Docusaurus Documentation](https://docusaurus.io/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/)
+- [React Documentation](https://react.dev/)
