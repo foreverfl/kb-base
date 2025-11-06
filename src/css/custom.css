@@ -27,8 +27,6 @@
 
 /* Tailwind CSS Framework */
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 /* Custom modules in dependency order */
@@ -41,3 +39,4 @@
 @import "./modules/typography.css";
 @import "./modules/code.css";
 @import "./modules/utilities.css";
+@import "./modules/version.css";

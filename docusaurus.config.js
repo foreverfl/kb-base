@@ -129,6 +129,12 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownActiveClassDisabled: true,
+            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },

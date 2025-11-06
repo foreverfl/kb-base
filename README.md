@@ -7,6 +7,7 @@ A clean starter template for building documentation sites with Docusaurus and Ta
 - **Docusaurus 3.x** - Fast and feature-rich static site generator
 - **Tailwind CSS 4.x** - Utility-first CSS framework for rapid UI development
 - **React 19** - Latest version of React for modern web development
+- **Version Management** - Built-in versioning system with canary support
 - **Dark mode support** - Built-in theme switching
 - **Responsive design** - Mobile-friendly out of the box
 - **SEO optimized** - Meta tags and structured data ready
@@ -63,13 +64,56 @@ my-site/
 
 ## Available Scripts
 
+### Development
 - `pnpm run start` - Start development server
 - `pnpm run build` - Build for production
 - `pnpm run serve` - Test production build locally
 - `pnpm run clear` - Clear cache
 - `pnpm run deploy` - Deploy to GitHub Pages (requires configuration)
 
+### Versioning
+- `pnpm run version <version>` - Create a new documentation version (e.g., `pnpm run version 1.1.0`)
+- `pnpm run version:create <version>` - Alias for creating a new version
+- `pnpm run version:list` - List all available versions
+
 Note: You can also use `npm run` instead of `pnpm run` for these commands.
+
+## Version Management
+
+This project includes a built-in versioning system that allows you to maintain multiple versions of your documentation:
+
+### Creating a New Version
+
+To create a new version of your documentation:
+
+```bash
+pnpm run version 1.1.0
+```
+
+This will:
+- Snapshot your current `docs/` folder into `versioned_docs/version-1.1.0/`
+- Create a versioned sidebars file
+- Update `versions.json` with the new version
+
+### Version Structure
+
+After creating versions, your project structure will include:
+
+```
+my-site/
+├── versions.json                 # List of all versions
+├── versioned_docs/
+│   └── version-1.0.0/           # Snapshot of docs for version 1.0.0
+└── versioned_sidebars/
+    └── version-1.0.0-sidebars.json
+```
+
+### Current Version
+
+The current version is displayed in:
+- Navbar dropdown selector
+- Homepage hero section with version badge
+- Canary badge for bleeding-edge features
 
 ## Customization
 
