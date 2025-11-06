@@ -67,7 +67,7 @@ td {
 /* Search input with Tailwind utilities */
 .navbar__search-input {
   @apply appearance-none inline-block;
-  @apply w-[12.5rem] h-8;
+  @apply w-50 h-8;
   @apply rounded-full border-0;
   @apply pl-9 pr-2 py-0;
   @apply text-base cursor-text;
@@ -84,7 +84,7 @@ td {
 /* Focus state */
 .navbar__search-input:focus {
   @apply outline-none ring-2 ring-green-500/50;
-  @apply w-[15rem] bg-white;
+  @apply w-60 bg-white;
 }
 
 /* Hover state */
@@ -162,4 +162,193 @@ td {
 
 [data-theme='dark'] .homepage-features-section .dark\:bg-gray-800 p {
   color: rgb(156, 163, 175);
+}
+
+/* ==========================================================================
+   LANGUAGE SELECTOR
+   ========================================================================== */
+
+/* Dropdown Container - ensure it's positioned relative */
+.dropdown {
+  @apply relative;
+}
+
+/* Language Dropdown Toggle */
+.navbar__link[aria-haspopup="true"] {
+  @apply flex items-center gap-2 px-3 py-2 rounded-lg font-medium;
+  @apply transition-all duration-200;
+  background-color: rgba(16, 185, 129, 0.1); /* Using --ifm-color-primary with low opacity */
+  color: var(--ifm-color-primary-dark);
+}
+
+.navbar__link[aria-haspopup="true"]:hover {
+  background-color: rgba(16, 185, 129, 0.15); /* Slightly darker on hover */
+  color: var(--ifm-color-primary-darker);
+}
+
+[data-theme='dark'] .navbar__link[aria-haspopup="true"] {
+  background-color: rgba(52, 211, 153, 0.1); /* Using dark mode primary with low opacity */
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .navbar__link[aria-haspopup="true"]:hover {
+  background-color: rgba(52, 211, 153, 0.15);
+  color: var(--ifm-color-primary-light);
+}
+
+/* Language Icon Styling */
+.navbar__link[aria-haspopup="true"] svg.iconLanguage_sdhG {
+  @apply text-gray-600;
+}
+
+[data-theme='dark'] .navbar__link[aria-haspopup="true"] svg.iconLanguage_sdhG {
+  @apply text-gray-400;
+}
+
+/* Dropdown Menu Container - adjusted positioning */
+.dropdown__menu {
+  @apply absolute right-0 z-50;
+  @apply min-w-[180px] py-2;
+  @apply bg-white rounded-lg shadow-lg border border-gray-200;
+  @apply opacity-0 invisible scale-95;
+  @apply transition-all duration-200 origin-top-right;
+  top: calc(100% - 4px); /* Slightly overlap to maintain hover */
+}
+
+[data-theme='dark'] .dropdown__menu {
+  @apply bg-gray-800 border-gray-700;
+}
+
+/* Show dropdown when active - with pseudo element for hover bridge */
+.dropdown--hoverable:hover .dropdown__menu,
+.dropdown--show .dropdown__menu {
+  @apply opacity-100 visible scale-100;
+}
+
+/* Create invisible bridge to maintain hover between button and dropdown */
+.dropdown--hoverable::before {
+  content: "";
+  @apply absolute left-0 right-0 h-2 invisible;
+  top: 100%;
+}
+
+.dropdown--hoverable:hover::before {
+  @apply visible;
+}
+
+/* Language Options List */
+.dropdown__menu ul {
+  @apply list-none p-0 m-0;
+}
+
+/* Individual Language Option */
+.dropdown__link {
+  @apply block px-4 py-2.5 text-sm font-medium;
+  @apply text-gray-700;
+  @apply transition-colors duration-150;
+}
+
+.dropdown__link:hover {
+  background-color: rgba(16, 185, 129, 0.08); /* Very light green background */
+  color: var(--ifm-color-primary-dark);
+}
+
+[data-theme='dark'] .dropdown__link {
+  @apply text-gray-300;
+}
+
+[data-theme='dark'] .dropdown__link:hover {
+  background-color: rgba(52, 211, 153, 0.1);
+  color: var(--ifm-color-primary);
+}
+
+/* Active Language */
+.dropdown__link--active {
+  @apply text-green-600 bg-green-50;
+  @apply relative;
+}
+
+[data-theme='dark'] .dropdown__link--active {
+  @apply text-green-400 bg-green-900/20;
+}
+
+/* Active Language Indicator */
+.dropdown__link--active::before {
+  content: "✓";
+  @apply absolute left-2 text-green-600;
+}
+
+[data-theme='dark'] .dropdown__link--active::before {
+  @apply text-green-400;
+}
+
+/* Add padding for checkmark */
+.dropdown__link--active {
+  @apply pl-8;
+}
+
+/* Language Divider */
+.dropdown__menu li + li {
+  @apply border-t border-gray-100;
+}
+
+[data-theme='dark'] .dropdown__menu li + li {
+  @apply border-gray-800;
+}
+
+/* Add dropdown arrow indicator */
+.navbar__link[aria-haspopup="true"]::after {
+  content: "";
+  @apply ml-1 w-0 h-0;
+  @apply border-4 border-transparent border-t-current;
+  @apply transition-transform duration-200;
+}
+
+/* Rotate arrow when dropdown is open */
+.dropdown--show .navbar__link[aria-haspopup="true"]::after {
+  @apply transform rotate-180;
+}
+
+/* Keep dropdown open when hovering over menu */
+.dropdown--hoverable .dropdown__menu:hover {
+  @apply opacity-100 visible scale-100;
+}
+
+/* Ensure dropdown stays interactive */
+.dropdown__menu {
+  pointer-events: none;
+}
+
+.dropdown--hoverable:hover .dropdown__menu,
+.dropdown--show .dropdown__menu,
+.dropdown__menu:hover {
+  pointer-events: auto;
+}
+
+/* Alternative approach with JavaScript click - add active state */
+.navbar__link[aria-expanded="true"] + .dropdown__menu,
+.navbar__link[aria-expanded="true"] ~ .dropdown__menu {
+  @apply opacity-100 visible scale-100;
+  pointer-events: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .dropdown__menu {
+    @apply min-w-[150px];
+  }
+
+  .dropdown__link {
+    @apply px-3 py-2 text-xs;
+  }
+
+  /* On mobile, use click instead of hover */
+  .dropdown--hoverable:hover .dropdown__menu {
+    @apply opacity-0 invisible scale-95;
+  }
+
+  .dropdown--show .dropdown__menu,
+  .navbar__link[aria-expanded="true"] + .dropdown__menu {
+    @apply opacity-100 visible scale-100;
+  }
 }
