@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Tutorial": {
-    "message": "Tutorial",
+    "message": "튜토리얼",
     "description": "The label for category 'Tutorial' in sidebar 'tutorialSidebar'"
   }
 }
