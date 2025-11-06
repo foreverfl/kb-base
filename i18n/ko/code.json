@@ -360,5 +360,65 @@
   "theme.tags.tagsPageTitle": {
     "message": "태그",
     "description": "The title of the tag list page"
+  },
+  "versionsPage.title": {
+    "message": "버전",
+    "description": "The title of the versions page"
+  },
+  "versionsPage.description": {
+    "message": "문서 버전 페이지",
+    "description": "The description of the versions page"
+  },
+  "versionsPage.versionEntry.next": {
+    "message": "다음",
+    "description": "The label for the next unreleased version"
+  },
+  "versionsPage.versionEntry.stable": {
+    "message": "안정",
+    "description": "The label for stable versions"
+  },
+  "versionsPage.versionEntry.canary": {
+    "message": "카나리 🚧",
+    "description": "The label for canary/unreleased versions"
+  },
+  "versionsPage.versionEntry.documentation": {
+    "message": "문서",
+    "description": "The label for documentation link"
+  },
+  "versionsPage.versionEntry.releaseNotes": {
+    "message": "릴리스 노트",
+    "description": "The label for release notes link"
+  },
+  "versionsPage.header.title": {
+    "message": "문서 버전",
+    "description": "The main title of the versions page"
+  },
+  "versionsPage.header.description": {
+    "message": "사용 가능한 모든 문서 버전을 확인할 수 있습니다.",
+    "description": "The description below the main title"
+  },
+  "versionsPage.currentVersion.title": {
+    "message": "현재 버전 (안정)",
+    "description": "The title for current version section"
+  },
+  "versionsPage.currentVersion.description": {
+    "message": "문서의 최신 안정 버전입니다.",
+    "description": "The description for current version section"
+  },
+  "versionsPage.nextVersion.title": {
+    "message": "다음 버전 (미출시)",
+    "description": "The title for next version section"
+  },
+  "versionsPage.nextVersion.description": {
+    "message": "현재 개발 중인 미출시 버전의 문서입니다.",
+    "description": "The description for next version section"
+  },
+  "versionsPage.pastVersions.title": {
+    "message": "이전 버전",
+    "description": "The title for past versions section"
+  },
+  "versionsPage.pastVersions.description": {
+    "message": "이전 버전의 문서를 확인할 수 있습니다.",
+    "description": "The description for past versions section"
   }
 }

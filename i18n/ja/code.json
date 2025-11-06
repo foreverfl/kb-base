@@ -360,5 +360,65 @@
   "theme.tags.tagsPageTitle": {
     "message": "タグ",
     "description": "The title of the tag list page"
+  },
+  "versionsPage.title": {
+    "message": "バージョン",
+    "description": "The title of the versions page"
+  },
+  "versionsPage.description": {
+    "message": "ドキュメントのバージョンページ",
+    "description": "The description of the versions page"
+  },
+  "versionsPage.versionEntry.next": {
+    "message": "次",
+    "description": "The label for the next unreleased version"
+  },
+  "versionsPage.versionEntry.stable": {
+    "message": "安定版",
+    "description": "The label for stable versions"
+  },
+  "versionsPage.versionEntry.canary": {
+    "message": "カナリア 🚧",
+    "description": "The label for canary/unreleased versions"
+  },
+  "versionsPage.versionEntry.documentation": {
+    "message": "ドキュメント",
+    "description": "The label for documentation link"
+  },
+  "versionsPage.versionEntry.releaseNotes": {
+    "message": "リリースノート",
+    "description": "The label for release notes link"
+  },
+  "versionsPage.header.title": {
+    "message": "ドキュメントバージョン",
+    "description": "The main title of the versions page"
+  },
+  "versionsPage.header.description": {
+    "message": "利用可能なすべてのドキュメントバージョンを確認できます。",
+    "description": "The description below the main title"
+  },
+  "versionsPage.currentVersion.title": {
+    "message": "現在のバージョン（安定版）",
+    "description": "The title for current version section"
+  },
+  "versionsPage.currentVersion.description": {
+    "message": "最新の安定版ドキュメントです。",
+    "description": "The description for current version section"
+  },
+  "versionsPage.nextVersion.title": {
+    "message": "次のバージョン（未リリース）",
+    "description": "The title for next version section"
+  },
+  "versionsPage.nextVersion.description": {
+    "message": "現在開発中の未リリースバージョンのドキュメントです。",
+    "description": "The description for next version section"
+  },
+  "versionsPage.pastVersions.title": {
+    "message": "過去のバージョン",
+    "description": "The title for past versions section"
+  },
+  "versionsPage.pastVersions.description": {
+    "message": "以前のバージョンのドキュメントを確認できます。",
+    "description": "The description for past versions section"
   }
 }

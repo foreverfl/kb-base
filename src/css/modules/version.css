@@ -7,7 +7,6 @@
  */
 
 /* Version Dropdown Button - Only target the version dropdown specifically */
-.navbar__item.dropdown.dropdown--hoverable:has(.dropdown__link:contains("1.0")) .navbar__link,
 .navbar__item .dropdown__link[class*="version"] {
   @apply px-3 py-1.5 rounded-lg font-medium text-sm;
   @apply bg-linear-to-r from-blue-500/10 to-purple-500/10;
