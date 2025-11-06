@@ -177,23 +177,17 @@ td {
 .navbar__link[aria-haspopup="true"] {
   @apply flex items-center gap-2 px-3 py-2 rounded-lg font-medium;
   @apply transition-all duration-200;
-  background-color: rgba(16, 185, 129, 0.1); /* Using --ifm-color-primary with low opacity */
+}
+
+/* Hover state */
+.navbar__link[aria-haspopup="true"]:hover {
+  background-color: rgba(16, 185, 129, 0.1); 
   color: var(--ifm-color-primary-dark);
 }
 
-.navbar__link[aria-haspopup="true"]:hover {
-  background-color: rgba(16, 185, 129, 0.15); /* Slightly darker on hover */
-  color: var(--ifm-color-primary-darker);
-}
-
-[data-theme='dark'] .navbar__link[aria-haspopup="true"] {
-  background-color: rgba(52, 211, 153, 0.1); /* Using dark mode primary with low opacity */
-  color: var(--ifm-color-primary);
-}
-
 [data-theme='dark'] .navbar__link[aria-haspopup="true"]:hover {
-  background-color: rgba(52, 211, 153, 0.15);
-  color: var(--ifm-color-primary-light);
+  background-color: rgba(52, 211, 153, 0.1);
+  color: var(--ifm-color-primary);
 }
 
 /* Language Icon Styling */
