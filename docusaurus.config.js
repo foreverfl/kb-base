@@ -139,8 +139,10 @@ const config = {
             position: 'right',
           },
           {
-            type: 'custom-githubIcon',
+            href: 'https://github.com/foreverfl/kb-base',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
           {
             type: 'search',
