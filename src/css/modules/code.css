@@ -42,3 +42,62 @@ pre {
 .markdown pre code {
   @apply text-gray-100 bg-transparent p-0;
 }
+
+/* ==========================================================================
+   CODE BLOCK ACTIONS (Copy button, Language label)
+   ========================================================================== */
+
+/* Code block container - ensure proper stacking */
+div[class*="codeBlockContainer"],
+div[class*="theme-code-block"] {
+  @apply relative;
+}
+
+/* Button group - language label and copy button */
+div[class*="buttonGroup"] {
+  @apply flex items-center justify-end gap-2;
+}
+
+/* Mobile: Make button group take full width to prevent overlap */
+@media (max-width: 768px) {
+  /* Code block container adjustments */
+  div[class*="codeBlockContainer"] {
+    @apply flex flex-col;
+  }
+
+  /* Ensure code block content area has proper spacing */
+  div[class*="codeBlockContent"] {
+    @apply flex flex-col;
+  }
+
+  /* Button group positioning - force to be above code and right-aligned */
+  div[class*="buttonGroup"] {
+    @apply relative w-full flex justify-end items-center gap-2;
+    @apply px-4 py-2 mb-2;
+    /* Reset any absolute positioning */
+    position: relative;
+    top: auto;
+    right: auto;
+    /* Move button group above the code block */
+    order: -1;
+  }
+
+  /* Pre tag - ensure it comes after button group */
+  div[class*="codeBlockContainer"] pre,
+  .prism-code {
+    @apply mt-0;
+    position: relative;
+    order: 1;
+  }
+
+  /* Language label on mobile */
+  div[class*="codeBlockTitle"] {
+    @apply text-sm font-medium text-gray-400;
+  }
+
+  /* Copy button on mobile */
+  button[class*="copyButton"],
+  button[class*="clean-btn"] {
+    @apply shrink-0;
+  }
+}
