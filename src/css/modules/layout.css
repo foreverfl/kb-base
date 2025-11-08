@@ -240,7 +240,7 @@
   }
 
   .navbar-sidebar__items {
-    @apply overflow-y-auto h-[calc(100vh-4rem)];
+    @apply h-[calc(100vh-4rem)];
   }
 
   .navbar-sidebar__item {
