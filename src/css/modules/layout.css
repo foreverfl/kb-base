@@ -251,6 +251,20 @@
   .navbar-sidebar .menu__link {
     @apply px-4 py-3 text-base;
   }
+
+  /* Language selector in mobile sidebar - ensure icon and text are inline */
+  .navbar-sidebar .menu__link svg {
+    @apply inline-block align-middle mr-2;
+  }
+
+  .navbar-sidebar .menu__link.dropdownNavbarItemMobile_QTON,
+  .navbar-sidebar .menu__link[role="button"] {
+    @apply flex items-center;
+  }
+
+  .navbar-sidebar .menu__link .iconLanguage_sdhG {
+    @apply mr-2;
+  }
 }
 
 @media (min-width: 997px) {
