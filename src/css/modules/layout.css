@@ -195,6 +195,12 @@
     @apply ml-1;
   }
 
+  /* Hide color mode toggle in mobile header (top navbar) */
+  .navbar__items--right .colorModeToggle_kzyk,
+  .navbar__items--right .toggle_k5YO {
+    display: none;
+  }
+
   /* Mobile sidebar menu */
   .navbar-sidebar {
     @apply fixed top-0 left-0 h-screen bg-white z-50 shadow-2xl;
