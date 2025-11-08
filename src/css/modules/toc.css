@@ -126,16 +126,6 @@ button[class*="tocCollapsibleButton"] {
   @apply text-gray-400 hover:text-white;
 }
 
-/* Collapsible Button Icon */
-button[class*="tocCollapsibleButton"]:after {
-  content: '▾';
-  @apply ml-2 transition-transform duration-200;
-}
-
-button[class*="tocCollapsibleButton"][aria-expanded="false"]:after {
-  @apply rotate-[-90deg];
-}
-
 /* Collapsible Content */
 div[class*="tocCollapsibleContent"] {
   animation: fadeIn 0.2s ease-in;
