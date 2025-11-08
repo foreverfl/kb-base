@@ -279,8 +279,18 @@
     @apply px-3;
   }
 
+  /* Hide logo text on mobile */
   .navbar__title {
-    @apply text-sm pl-1;
+    display: none;
+  }
+
+  /* Center logo vertically on mobile */
+  .navbar__brand {
+    @apply flex items-center justify-center;
+  }
+
+  .navbar__logo {
+    @apply flex items-center;
   }
 
   .navbar__logo img {
