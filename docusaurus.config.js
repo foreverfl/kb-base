@@ -143,10 +143,6 @@ const config = {
             position: 'right',
           },
           {
-            type: 'custom-darkmode',
-            position: 'right',
-          },
-          {
             type: 'search',
             position: 'right',
           },

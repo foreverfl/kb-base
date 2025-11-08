@@ -63,6 +63,27 @@
   @apply gap-1 md:gap-2;
 }
 
+/* Control navbar item order on the right side */
+.navbar__items--right {
+  @apply flex items-center;
+}
+
+/* Set order for right-side navbar items */
+/* Order: Version/Locale dropdowns -> GitHub (10) -> ColorMode (20) -> Search (30) */
+.header-github-link {
+  order: 10;
+}
+
+.colorModeToggle_kzyk,
+.toggle_k5YO {
+  order: 20;
+}
+
+.navbarSearchContainer_dFOU,
+.navbar__search {
+  order: 30;
+}
+
 /* GitHub link in navbar - using mask-image like official docs */
 .header-github-link {
   @apply flex items-center justify-center w-9 h-9 md:w-12 md:h-12 rounded-lg hover:bg-gray-100 transition-colors;
@@ -106,17 +127,44 @@
   background-color: var(--ifm-navbar-link-hover-color);
 }
 
-/* Dark mode toggle in navbar */
-.header-darkmode-toggle {
-  @apply flex items-center justify-center w-9 h-9 md:w-12 md:h-12 rounded-lg hover:bg-gray-100 transition-colors;
+/* Color Mode Toggle - Fix icon display issues */
+.colorModeToggle_kzyk {
+  @apply flex items-center;
 }
 
-[data-theme='dark'] .header-darkmode-toggle {
+.toggleButton_iYsp {
+  @apply w-9 h-9 md:w-10 md:h-10 flex items-center justify-center rounded-lg;
+  @apply hover:bg-gray-100 transition-colors;
+}
+
+[data-theme='dark'] .toggleButton_iYsp {
   @apply hover:bg-gray-800;
 }
 
-.header-darkmode-toggle:hover {
-  @apply no-underline;
+/* Show only the appropriate icon based on current theme */
+.toggleButton_iYsp .toggleIcon_b06o {
+  @apply hidden;
+}
+
+/* Light mode - show moon icon */
+[data-theme='light'] .toggleButton_iYsp .darkToggleIcon_EApx {
+  @apply block;
+}
+
+/* Dark mode - show sun icon */
+[data-theme='dark'] .toggleButton_iYsp .lightToggleIcon_Z_lD {
+  @apply block;
+}
+
+/* Icon sizing and color */
+.toggleIcon_b06o {
+  @apply w-5 h-5 md:w-6 md:h-6;
+  color: var(--ifm-navbar-link-color);
+  transition: color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.toggleButton_iYsp:hover .toggleIcon_b06o {
+  color: var(--ifm-navbar-link-hover-color);
 }
 
 /* Navbar responsive */
