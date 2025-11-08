@@ -219,9 +219,20 @@
     @apply flex items-center gap-2 h-16 px-4 border-b border-gray-200;
   }
 
-  /* Push close button to the right */
+  /* Reset order for mobile sidebar and push color mode toggle to the right */
+  .navbar-sidebar__brand .toggle_k5YO {
+    order: 0;
+    @apply ml-auto flex items-center h-full;
+  }
+
+  /* Larger color mode toggle button in mobile sidebar */
+  .navbar-sidebar__brand .toggleButton_iYsp {
+    @apply w-20 h-20;
+  }
+
+  /* Reset order for close button in mobile sidebar */
   .navbar-sidebar__brand .navbar-sidebar__close {
-    @apply ml-auto;
+    order: 0;
   }
 
   [data-theme='dark'] .navbar-sidebar__brand {
