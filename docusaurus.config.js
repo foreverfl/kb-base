@@ -198,8 +198,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Knowledge Base. Built with Docusaurus.`,
       },
       colorMode: {
-        defaultMode: 'light',
-        disableSwitch: true,  // Disable the default dark mode toggle
+        defaultMode: 'dark',
+        disableSwitch: false, 
         respectPrefersColorScheme: false,
       },
       prism: {
